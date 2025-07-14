@@ -1,1 +1,64 @@
-# js-mini-project1-2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARY STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" style="text-decoration: none; color: #ae68c0;">GARY STORE</a></h1> <!-- Make store name clickable -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+            <a href="checkout.html">
+                <img src="CART.png" alt="Cart" class="cart-icon"> <!-- Ensure this line is present -->
+                <span id="cart-count" class="cart-count">0</span> <!-- Cart count badge -->
+            </a>
+        </div>
+    </header>
+    
+    
+
+    <section class="products">
+        <h2>Featured Products</h2>
+        <h2>(CASH ON DELIVERY ONLY)</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="Lining.jpeg" alt="LINING Racket">
+                <h3>LINING Racket</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart" data-product="LINING Racket" data-price="29.99">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="Yonex.jpeg" alt="YONEX Racket">
+                <h3>YONEX Racket</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart" data-product="YONEX Racket" data-price="49.99">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="Victor.jpeg" alt="VICTOR Racket">
+                <h3>VICTOR Racket</h3>
+                <p>$19.99</p>
+                <button class="add-to-cart" data-product="VICTOR Racket" data-price="19.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 GARY STORE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
