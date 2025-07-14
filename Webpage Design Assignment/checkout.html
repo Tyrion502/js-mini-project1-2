@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Shopee Inspired Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" style="text-decoration: none; color: #ae68c0;">GARY STORE</a></h1> <!-- Make store name clickable -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+            <a href="checkout.html">
+                <img src="CART.png" alt="Cart" class="cart-icon"> <!-- Ensure this line is present -->
+                <span id="cart-count" class="cart-count">0</span> <!-- Cart count badge -->
+            </a>
+        </div>
+    </header>
+
+    <section class="checkout">
+        <h2>Your Cart</h2>
+        <ul id="checkout-cart-list">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="checkout">Proceed to Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GARY STORE</p></p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
